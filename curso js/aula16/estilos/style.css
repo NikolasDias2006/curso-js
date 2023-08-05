@@ -15,6 +15,7 @@ body {
 
 header {
     text-align: center;
+    color:white;
 }
 
 section {
@@ -26,10 +27,14 @@ section {
     margin: auto;
 }
 
-
-
+section #div1 {
+    padding: 20px 20px 0px 0px;
+    text-align: start;
+    
+}
 
 footer {
     font-style: italic;
     text-align: center;
+    color:white;
 }
