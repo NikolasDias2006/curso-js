@@ -15,3 +15,12 @@ para economizar espaço quando for fazer eventos, use esse comando no scritp
                  "".addEventListener("evento","a funcao")
 
 na hora do switch nao esqueça de colocar o break don't forget !!!
+
+
+"".push("") add um elemento na ultima posiçao do arraw
+
+"".length mostra o comprimento do arraw
+
+"".sort()Organiza os numeros de um arraw 
+
+"".indexOf("") o elemento que colocou o javascript irá tentar procurar e mostra a posiçao que ele esta (se aparecer -1 e porque nao foi encontrado)
