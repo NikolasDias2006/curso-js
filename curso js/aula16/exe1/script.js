@@ -12,6 +12,7 @@ function Contar() {
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0 ) {
         alert("[ERRO!!]Faltam dados")
     } else {
+        res.innerHTML = ``
         i = Number(ini.value)
         f = Number(fim.value)
         p = Number(pas.value)

@@ -33,6 +33,11 @@ section #div1 {
     
 }
 
+select {
+    display: block;
+    margin: auto;
+}
+
 footer {
     font-style: italic;
     text-align: center;
