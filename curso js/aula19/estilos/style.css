@@ -40,6 +40,11 @@ div #lista {
     margin-top: 10px;
     width: 150px;
 }
+
+div#res {
+    text-align: center;
+}
+
 select {
     display: block;
     margin: auto;
