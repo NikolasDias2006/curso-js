@@ -1,5 +1,7 @@
 const tit = document.querySelector(".tit")
 
+const databr = document.getElementById("data")
+
 // const nao deixa declarar outra variavel.
 const x = "hello world"
 //x = 1 dá erro
@@ -23,17 +25,42 @@ while(i1 <= 10) {
 
 //arrow function,outro jeito de declarar uma function
 
-/* const arrowtest = () =>alert("Ola,mundo") 
+ //const arrowtest = () =>alert("Ola,mundo") arrowtest() 
 
-arrowtest() */
+
 
 /*ao interagir com o ola mundo*/
 
-tit?.addEventListener("click",function(prev) {
+let data = Date()
+
+tit.addEventListener("click",function(prev) {
+    tit.innerHTML = ""
     tit.innerHTML += "tudo bom"
 })
 
-   
+databr.addEventListener("click",function(date) {
+    databr.innerHTML = ""
+    databr.innerHTML += data
+})
 
 
-//parei na parte 1:01:00
+/*Concatenando uma string*/
+minhastring = "Hello,there ! "
+
+console.log(minhastring += "What's up ?")
+
+/* Momento matematica */
+
+//valor do pi
+console.log(Math.PI)
+
+//arredodando um numero
+console.log(Math.round(3.6))
+
+//raiz quadrada
+console.log(Math.sqrt(81))
+
+//potencia 2*2*2 
+console.log(Math.pow(2,3))
+
+//parei na parte 1:15:00
