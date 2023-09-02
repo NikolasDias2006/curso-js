@@ -63,4 +63,3 @@ console.log(Math.sqrt(81))
 //potencia 2*2*2 
 console.log(Math.pow(2,3))
 
-//parei na parte 1:15:00
