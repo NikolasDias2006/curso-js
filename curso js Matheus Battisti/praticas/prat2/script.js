@@ -83,4 +83,86 @@ try {
     console.log(error.message)
 }
 
-//parei na parte 1:48:35
+//callback
+
+function cumprimentar(nome,callback) {
+    console.log("ola " +nome)
+    callback()
+}
+
+function saudacao() {
+     console.log("Como voce está")
+}
+
+cumprimentar("Nikolas",saudacao) 
+
+//criando uma function durante a chamada
+
+cumprimentar("Nelow",function () {
+    console.log("Eae de boa")
+})
+
+//settimeout =>  depois de uma tempo executa algo
+
+function mostrarmensagem() {
+    console.log("Esta mensagem irá aparecer daqui 3 segundos")
+}
+//3000 = 3 segundos
+//setTimeout(mostrarmensagem,3000)
+
+//do 1 ao 8 a cada 1 segundo
+/* 
+setTimeout(function () {
+    console.log("1")
+},1000)
+setTimeout(function () {
+    console.log("2")
+},2000)
+setTimeout(function () {
+    console.log("3")
+},3000)
+setTimeout(function () {
+    console.log("4")
+},4000)
+setTimeout(function () {
+    console.log("5")
+},5000)
+setTimeout(function () {
+    console.log("6")
+},6000)
+setTimeout(function () {
+    console.log("7")
+},7000)
+setTimeout(function () {
+    console.log("8")
+},8000)
+*/
+
+//promises
+
+const promessa = new Promise((resolve, reject) => {
+    const condicao = false
+
+    if(condicao) {
+        resolve("A condiçao é verdadeira!")
+    } else {
+        reject("A condiçao é falsa!")
+    }
+})
+//seila = menssagem ,para testar
+promessa.then((seila) => {
+    console.log(seila)
+}) 
+//tira o erro vermelho 
+.catch((erro) => {
+    console.log(erro)
+})
+
+const promessa1 = Promise.resolve(3)
+const promessa2 = new Promise((resolve,reject) => {
+  setTimeout(resolve,2500,"testando")
+})
+
+Promise.all([promessa1,promessa2]).then((valores) => console.log(valores))
+
+//parei na parte 1:59:40
