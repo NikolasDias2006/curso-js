@@ -140,7 +140,7 @@ setTimeout(function () {
 
 //promises
 
-const promessa = new Promise((resolve, reject) => {
+/* const promessa = new Promise((resolve, reject) => {
     const condicao = false
 
     if(condicao) {
@@ -163,6 +163,37 @@ const promessa2 = new Promise((resolve,reject) => {
   setTimeout(resolve,2500,"testando")
 })
 
-Promise.all([promessa1,promessa2]).then((valores) => console.log(valores))
+Promise.all([promessa1,promessa2]).then((valores) => console.log(valores)) */
 
-//parei na parte 1:59:40
+//async Await
+
+async function obtervalor() {
+
+    const promessa = new Promise((resolve,reject) => {
+        setTimeout(() => resolve("valor obtido"),2000)
+})
+
+  const valor = await promessa
+
+  console.log(valor)
+}
+
+obtervalor()
+
+//com o erro "reject"
+async function obtervalorerror() {
+
+  try {
+    const promessa = new Promise((resolve,reject) => {
+        setTimeout(() => reject("valor com error"),1000)
+  })
+  const valor = await promessa
+  console.log(valor)
+} catch (error){
+      console.log(error)
+  }
+}
+
+obtervalorerror()
+
+//parei na parte
