@@ -196,4 +196,4 @@ async function obtervalorerror() {
 
 obtervalorerror()
 
-//parei na parte
+//parei na parte 2:05:00
