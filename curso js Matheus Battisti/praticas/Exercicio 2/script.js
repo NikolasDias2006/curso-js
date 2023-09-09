@@ -53,4 +53,3 @@ console.log(StrinMouse.startsWith("O"))
 //termina com a Palavra Roma ?
 console.log(StrinMouse.endsWith("Roma"))
 
-//parei na parte 2:19:00
