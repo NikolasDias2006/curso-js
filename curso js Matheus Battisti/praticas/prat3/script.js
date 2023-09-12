@@ -24,4 +24,44 @@ elemento.classList.add("minhaclasse")
 //se a classe nao existir o toggle irá add ser ela existir o toggle irá remover
 elemento.classList.toggle("minhaclasse")
 
-//parei na parte 2:34:29
+
+//manipular o CSS
+const elemento3 = document.querySelector("#meuid")
+
+elemento3.style.color = "green" 
+elemento3.style.background = "red"
+
+//navegaçao em nós
+const element4 = document.querySelector("input")
+
+//o que tem antes do comando
+const pai = element4.parentNode
+
+console.log(element4)
+
+//o que tem dentro
+const filho = element4.firstChild
+
+console.log(filho)
+
+//ultimo filho (ultimo arquivo)
+
+//criando um elemento
+const ultimofilho = element4.lastChild
+
+console.log(element4)
+
+const novoelemento = document.createElement("div")
+
+novoelemento.textContent = "criei essa div "
+console.log(novoelemento)
+
+//passando esse elemento para o html
+document.body.appendChild(novoelemento)
+//colocando ele junto com o elemento pai
+document.body.insertBefore(novoelemento,pai)
+
+//removendo um elemento se tirar "" ira remover a linha vermelha
+document.body.removeChild("elemento3")
+
+//parei na parte 
