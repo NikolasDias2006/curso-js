@@ -62,6 +62,24 @@ document.body.appendChild(novoelemento)
 document.body.insertBefore(novoelemento,pai)
 
 //removendo um elemento se tirar "" ira remover a linha vermelha
-document.body.removeChild("elemento3")
+document.body.removeChild(elemento3)
 
-//parei na parte 
+//Eventos
+
+//click
+const botao = document.querySelector("#botao")
+
+const botao2 = document.querySelector("#input2")
+botao.addEventListener("click",function(event){
+    
+  event.preventDefault()
+  console.log("ola")
+})
+
+const form = document.querySelector("#texto2")
+
+
+form.addEventListener("keydown",function() {
+    console.log("tecla pressionada")
+})
+//parei na parte 2:47:07
