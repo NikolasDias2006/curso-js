@@ -82,4 +82,22 @@ const form = document.querySelector("#texto2")
 form.addEventListener("keydown",function() {
     console.log("tecla pressionada")
 })
-//parei na parte 2:47:07
+
+// formulario
+const formu = document.querySelector("#form")
+
+formu.addEventListener("submit",function (event) {
+  event.preventDefault()
+  console.log("Enviado")
+})
+
+//modificiando link
+link.addEventListener("click", function (event) {
+  //evita de iniciar sua açao basica
+  event.preventDefault()
+
+  console.log("clicou no link!")
+})
+
+
+//parei na parte 2:55:51
